@@ -25,7 +25,10 @@
       return sorteedClassCount[0][0]
 ```
 ## 数据归一化
-newValue = (OldValue-min)/(max-min)
+![归一化方法](https://github.com/Plinys/Maching-Learning-Notebook/blob/master/picture/%E5%BD%92%E4%B8%80%E5%8C%96.png)  
+以极差变换法为例:  
+newValue = (OldValue-min)/(max-min)  
+
 ```
   def autoNorm(dataSet）：
       minVals = dataSet.min(0)
