@@ -25,7 +25,12 @@
       return sorteedClassCount[0][0]
 ```
 ## 数据归一化
-![归一化方法](https://github.com/Plinys/Maching-Learning-Notebook/blob/master/picture/%E5%BD%92%E4%B8%80%E5%8C%96.png)  
+#### 线性比例变换法：
+$$ y_i = \frac{x_i}{max(x)} $$
+#### 极差变换法：
+$$ y_i = \frac{x_i - min(x)}{max(x) - min(x)} $$
+#### 0均值标准化（Z-score方法）：
+$$ y_i = \frac{x_i - mean(x)}{\sigma} $$
 以极差变换法为例:  
 newValue = (OldValue-min)/(max-min)  
 
